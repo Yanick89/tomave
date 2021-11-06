@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>TOMAVè</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+       
+</head>
+
+<body>
+    <div class="header-top">
+        <img src="tomave.png" alt="Logo de Tomavè" width="130px">
+        <div class="wrap">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-new">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    <!-- <div class="temp-humid">
+        <p>
+            <i class="fas fa-thermometer-half"></i>
+            <span id="temperature">%TEMPERATURE%</span> 
+            <span class="dht-labels">Temperature </span>
+            <span class="units">&deg;C</span>
+        </p>
+        <p>
+            <i class="fas fa-tint"></i>
+            <span id="humidity">%HUMIDITY%</span>
+            <span class="dht-labels"> Humidity</span>
+            <sup class="units">&#37;</sup>
+        </p>
+    </div> -->
+    <div class="temp-humid">
+        <p>
+            <span id="temperature">%TEMPERATURE% <i class="fas fa-thermometer-half ml-1"></i> </span>
+        </p>
+        <p>
+            <span id="humidity">%HUMIDITY% <i class="fas fa-tint ml-1"></i></span>
+        </p>
+    </div>
+        <div class="btn-content">
+            <!-- On -Off lampe -->
+        <div class="btn-capteur">
+            <button class="on"><a href="/on1">ON</a></button>
+            <button class="off"><a href="/off1" class="off1">OFF</a></button>
+        </div>
+
+        <!-- On -Off Ventilo -->
+        <div class="btn-capteur">
+            <button class="on"><a href="/on2">ON</a></button>
+            <button class="off"><a href="/off2" class="off2">OFF</a></button>
+        </div>
+        <!-- On -Off moteur -->
+        <div class="btn-capteur">
+            <button class="on"><a href="/on3">ON</a></button>
+            <button class="off"><a href="/off3" class="off3">OFF</a></button>
+        </div>
+    </div>
+        <!--=================================* popUp Infos par volailles *=============================-->
+
+        <div class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <!-- Modal Content: begins -->
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <div class="body-message">
+                            <div class="content-btn">
+                                <h3>Inforamtion des volailles incubées</h3>
+                                <button class="btn-poule" data-toggle="modal" data-target="#modalPoule">
+                        Poule
+                    </button>
+                                <button class="btn-canard" data-toggle="modal" data-target="#modalCanard">Canard</button>
+                                <button class="btn-pentade" data-toggle="modal" data-target="#modalPentade">Pentade</button>
+                                <button class="btn-caille" data-toggle="modal" data-target="#staticBackdrop">Caille</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+
+                </div>
+                <!-- Modal Content: ends -->
+            </div>
+
+        </div>
+        
+        <div class="modal fade" id="modalPoule" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalPouleLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="infos-volllaile">
+                            <img src="https://th.bing.com/th/id/OIP.VDT0ginPt1yI3okBgkubTgHaHK?pid=ImgDet&rs=1" alt="illustration de la poule">
+                            <h3>Infos poule Incubation</h3>
+                            <div class="infos">
+                                <p>Dureé d'incubation: <strong>21j</strong> </p>
+                                <p>Température: <strong>37.7 C°</strong> </p>
+                                <p>Humidité: <strong>35.7 C°</strong> </p>
+                                <p>nombre de basculement par jour: <strong></strong> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------* Canard *------------------------------->
+        <div class="modal fade" id="modalCanard" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalCanardLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="infos-volllaile">
+                            <img src="https://us.123rf.com/450wm/iimages/iimages1303/iimages130300478/18287941-illustration-d-un-canard-blanc-sur-un-fond-blanc.jpg?ver=6" alt="illustration de la poule">
+                            <h3>Infos Canard Incubation</h3>
+                            <div class="infos">
+                                <p>Dureé d'incubation: <strong>28j</strong> </p>
+                                <p>Température: <strong>37.5 C°</strong> </p>
+                                <p>Humidité: <strong>37.2 C°</strong> </p>
+                                <p>nombre de basculement par jour: <strong></strong> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!----------------------------------* Pentade *------------------------------>
+        <div class="modal fade" id="modalPentade" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalPentadeLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="infos-volllaile">
+                            <img src="https://www.lafermeenbresse.fr/userfiles/27828/pintade.png" alt="illustration de la poule">
+                            <h3>Infos Pentade Incubation</h3>
+                            <div class="infos">
+                                <p>Dureé d'incubation: <strong>21j</strong> </p>
+                                <p>Température: <strong>37.7 C°</strong> </p>
+                                <p>Humidité: <strong>40C°</strong> </p>
+                                <p>nombre de basculement par jour: <strong></strong> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!---------------------------------* Caille *-------------------------------->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="infos-volllaile">
+                            <img src="https://img.freepik.com/vecteurs-libre/dessin-anime-souriant-oiseau-caille-fond-blanc_29190-5377.jpg?size=338&ext=jpg" alt="illustration de la poule">
+                            <h3>Infos Caille Incubation</h3>
+                            <div class="infos">
+                                <p>Dureé d'incubation: <strong>17j</strong> </p>
+                                <p>Température: <strong>37.7 C°</strong> </p>
+                                <p>Humidité: <strong>37.5C°</strong> </p>
+                                <p>nombre de basculement par jour: <strong></strong> </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!--=================================* popUp Infos par volailles End*=============================-->
+    
+     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
