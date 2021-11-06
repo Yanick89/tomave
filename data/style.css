@@ -29,13 +29,6 @@ body {
     margin: 0 4rem;
 }
 
-/* .header-top button{
-    border: none;
-    outline: none;
-    margin: 0 .5rem;
-    border-radius: 50%;
-} */
-
 .header-top button a{
     text-decoration: none;
     color: #fff;
@@ -51,11 +44,6 @@ body {
     color: #fff;
 }
 
-/* .header-top button:nth-last-child(1){
-    background: rgb(224, 34, 34);
-    color: #fff;
-} */
-
 .header-top span a i {
     font-size: 2rem;
     color: #d9dab0;
@@ -64,7 +52,6 @@ body {
 .temp-humid {
     display: flex;
     justify-content: space-between;
-    /* margin: 0 10px; */
 }
 
 .temp-humid span {
@@ -75,7 +62,9 @@ body {
 h2 {
     font-size: 3.0rem;
 }
-
+h3{
+    text-align: center;
+}
 p {
     display: flex;
     flex-direction: column;
@@ -83,7 +72,6 @@ p {
 
 p span i {
     font-size: 1.5rem !important;
-    margin: 0 40px !important;
     color: #ffe268;
 }
 
@@ -111,15 +99,15 @@ p span i {
     margin: 0 1rem;
     border: none;
     outline: none;
-    /* padding: 10px 40px; */
     font-size: 1.8rem;
     cursor: pointer;
     transition: .4s ease;
     margin: .3rem;
+    border-radius: 5px;
 }
 .btn-capteur button a{
     padding: 5px 40px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: .4s ease;
     text-decoration: none;
@@ -356,7 +344,7 @@ textarea {
 .day-assets .btn:nth-child(2) i {
     padding: 0 10px 0 0 !important;
 }
-
+/* 
 .calendar {
     height: 370px;
     width: 324px;
@@ -364,7 +352,7 @@ textarea {
     background: #ffffff;
     padding: 10px;
     user-select: none;
-}
+} */
 
 .header {
     display: flex;
