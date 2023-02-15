@@ -110,6 +110,9 @@ body {
     box-shadow: inset -7px 20px 30px rgb(138 191 44 / 22%),
                 20px 20px 66px rgb(9 94 20 / 4%),
                 20px 20px 20px rgb(9 94 20 / 4%);
+    border-top: 1px solid #fff;
+    background: #fff;
+    transition: background .8s ease;
 }
 .temp-humid {
     display: flex;
